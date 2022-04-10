@@ -14,6 +14,6 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r -e 'ssh -p 7174' --delete-after --quiet $TRAVIS_BUILD_DIR/ chris@ssh.chrisaiello.ca:/home/chris/travis
+  script: rsync -r -e 'ssh -p 7174' --delete-after --quiet $TRAVIS_BUILD_DIR/site2/ chris@ssh.chrisaiello.ca:/srv/site2
   on:
     branch: main
