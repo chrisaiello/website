@@ -60,9 +60,9 @@ html
 }
 .container
 {
-    overflow: auto;
+    overflow: none;
 
-    /*max-width: 680px;*/
+    max-width: 680px;
     padding: 0 15px;
 }
 .content
