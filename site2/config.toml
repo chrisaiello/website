@@ -1,0 +1,29 @@
+languageCode = "en-us"
+baseurl = "https://chrisaiello.ca/"
+theme = "hugo-goa"
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+title = "Chris Aiello"
+
+[params]
+	author = "Chris Aiello"
+	dateFormat = "Jan 6, 2006"
+	authorImage = "headshot.jpg"
+[params.extra]
+	copyright = "© 2016. Chris Aiello. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
+	poweredBy = "false"
+#[[menu.main]]
+#	name = "blog"
+#	weight = 100
+#	url = "/posts/"
+#[[menu.main]]
+#	name = "about"
+#	weight = 200
+#	url = "/about/"
+
+[params.social]
+	github = "chrisaiello"
+	linkedIn = "chris-aiello-767b1481"
+	twitter = "chrisaiello"
+	email = "chris@chrisaiello.ca"

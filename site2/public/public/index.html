@@ -1,0 +1,92 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<style>
+    #main {
+    margin-top: 50px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 50%;
+    border: 1px solid #545454;
+    }
+    .animated {
+        position: absolute;
+    }
+    #animation {
+        margin: auto;
+        width: 50%;
+    }
+</style>
+
+
+<div id="animation">
+    <img src="https://weather.gc.ca/cacheable/images/radar/layers_detailed/radar_circle/radar_circle.gif" class="animated overlay circles" />
+    <img src="https://weather.gc.ca/cacheable/images/radar/layers_detailed/roads/WKR_roads.gif" class="animated overlay roads" />
+    <img src="https://weather.gc.ca/cacheable/images/radar/layers_detailed/default_cities/wkr_towns.gif" class="animated overlay towns" />
+    <img src="https://weather.gc.ca/cacheable/images/radar/layers_detailed/additional_cities/wkr_towns.gif" class="animated overlay towns" />
+    
+</div>
+
+<script>
+    var baseURL = "http://dd.weather.gc.ca/radar/PRECIPET/GIF/WKR/";
+    var testimg = "201703111740_WKR_PRECIPET_SNOW.gif";
+    var fileBase = "_WKR_PRECIPET_SNOW.gif"
+    var testDateCode = "2017 03 11 17 40"
+    var frameCount = 20;
+    var seqID = frameCount;
+
+    
+    var currentTime = new Date();
+    var month = currentTime.getUTCMonth() + 1;
+    if (month<10){
+        month = "0"+month;
+    }
+    var day = currentTime.getUTCDate();
+    var year = currentTime.getUTCFullYear();
+    var hour = currentTime.getUTCHours();
+    var minute = currentTime.getUTCMinutes();
+    minute = ((minute - (minute % 10)) - 10);
+    
+    var imgDates = [];
+    
+    var step;
+    for (step = 0; step < frameCount; step++){
+        
+        if(step>0){
+            minute = minute - 10;
+        }
+        if (minute==-10){
+            minute = 50;
+            hour = hour - 1;
+        }
+        
+        if (minute<10 && minute > -1){
+            minute = "0"+minute;
+        }
+        
+        if(hour<10){
+            hour = "0"+hour;
+        }
+
+        
+        imgDates[step] = (''+year+month+day+hour+minute);
+        //console.log(step, minute);
+        console.log(imgDates[step]);
+    }
+    
+    for (step = frameCount-1; step >= 0; step--) {
+        $('#animation').prepend($('<img>', {id: step, src:baseURL + imgDates[step] + fileBase, class: 'animated radarimg'}))
+    }
+    
+    setInterval(function () {
+        $('#'+seqID--).hide(0)
+        if (seqID==0){
+            //console.log(seqID);
+            seqID=frameCount;
+            $('.radarimg').show(0)
+        }
+    }, 300);    
+    
+</script>
+

@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/aiello
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://chrisaiello.ca
+  * I am aiello (https://keybase.io/aiello) on keybase.
+  * I have a public key with fingerprint AFEB EE68 79D8 95D8 3DC9  C3FD 2ABB 1039 8D0E 6DC1
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101d466b9fef71dadbf601410125c1ddaf9a3eea27ca7df804c88aeb8b0ce7bdfa40a",
+            "fingerprint": "afebee6879d895d83dc9c3fd2abb10398d0e6dc1",
+            "host": "keybase.io",
+            "key_id": "2abb10398d0e6dc1",
+            "kid": "0101d466b9fef71dadbf601410125c1ddaf9a3eea27ca7df804c88aeb8b0ce7bdfa40a",
+            "uid": "eeed029c7ac76e15dce8ba2c0bed4419",
+            "username": "aiello"
+        },
+        "revoke": {
+            "sig_ids": [
+                "c41be937bbeea119f1975d3103666bab07e85375f6e98de8f70639f86aff18ac0f"
+            ]
+        },
+        "service": {
+            "hostname": "chrisaiello.ca",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1476669329,
+    "expire_in": 157680000,
+    "prev": "21ae196098597b58cdfdaf2926204f31ed6938f57431686c2da3096b6fbee9f0",
+    "seqno": 13,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMJqAnicrVJNaJxFGN41sdiNP9FDa4NRmBRsZIkz3898M+vBQz0oFiv1p38Jm/l5
+J/u5m/2237fZGtcUsSoWhRJ7kCJ6qD2IUEuR1JYc3MaA0FBD4qWklEJJW7CHNNCi
+sS06X6w3j85lmHee93mf55mZfqgtk8vOP3P7ieajX2zKzpy5OZLZ0f7seBPJSI+i
+QhOVYXWDioakXiyHGhUQJphoj1LJDZiAaKGloZh4tuz4imgtDBcugHACJQJtGPYU
+YwIkk1hBILURHhYoj0xYHYK4FofVuqUVBiQAZQHXjPuauVpx5RrtCCkJdjnTGKhW
+xDaWoiTtsOKkSKAvjGzNHoqr8v4D/z/rHlmlAwCNHa4CoQIKxNcKmBSOwhK05xGe
+AhOIq2IYUnchVCoRGsujGBpRGdJUk3DISk5QYTdSHpHA3UDaCAQh3BAe+Nq1PqgV
+LCQOgPlu4BsK1hgwE2DqcsOoMIYwobBBA5bbzmuEapU8zejebFWKw+QfAX0qNVCL
+o3qkooq9K9XrtaSQ6qqP1lLwXpDFezRFGVa1fSPb0YA4CaMqKhCLVPUw5SVeYMVx
+1+F5BG/XwhiKYYrwA8qwXekcaKQvQgQQTjFnPg+kz5Q2NmuHO9TBnnEJaMvCjB94
+LqGMKkcLF3MqqbFpcINRamxPNbLcrtUphiynza4q6iMxoLGpVn97JpvLrLn/vvTz
+ZnJrO//90uu3P5D59vHzE4X5bfrXRy7PLPUO57a8Ovt+e8dB9vvdpYlPk4HuNa3s
+0cqlubJ7oDw5Xfpm17ql2Vs/zy5/+OPJfQ/nj+88NVlz5m9dne5+DD1IM3e7Wgu7
+OpbXTXX2XKAr010rm79m4cW2xfUfxD8lL4+f+P7ONeeXZvf4In9vqnWm8VqP19qr
+57rGFts29NweGDz8Sd++z3rPXj3SO3n9t/6Th85tHZq5+eXON7/aEoW8+9hLC4NP
+rpzuqCUHtw5e2tz5fPjuXNvHueHDIwd2fPS5/84rG/ovDLzw1KFm7o/Lb03sF9Wl
+p49v/G5y2+jrG//8obTcunhnz/7dmSu5/NqjN/568Y35IwvXstuf+xtQlF/g
+=Ckm8
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/aiello
+
+==================================================================
+
